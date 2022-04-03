@@ -6,7 +6,7 @@
 	</head>
 
 	<body>
-		<header><h1>Kontaktieren sie uns</h1></header>
+		<header><h1>Kontaktformular</h1></header>
 		<nav>
 				<ul>
 					<li><a href="index.html">Start</a></li>
@@ -17,7 +17,53 @@
 		</nav>
 
 		<main>
-			  
+			<h2>Schreiben Sie uns</h2>
+			<p>Egal, was ihr Wunsch ist, schreiben Sie uns ihr Anliegen und wir antworten so schnell wie möglich.</p>
+			<!-- Action würde natürlich angepasst, sobald ich ein Skript dafür schreiben kann und
+			dient jetzt "mehr oder weniger" als Platzhalter -->
+			  <form id="form1" method="post" enctype="text/plain" action="mailto:kontakt@ramenstube.de">
+					  <p>
+							  <label for="vorname">Vorname</label>
+								<input type="text" name="forename" id="vorname">
+						</p>
+
+						<p>
+							  <label for="nachname">Nachname*</label>
+								<input type="text" name="name" id="nachname" required>
+						</p>
+
+						<p>
+							  <label for="adresse">Adresse</label>
+								<input type="text" name="address" id="adresse">
+						</p>
+
+						<p>
+							  <label for="email">Email*</label>
+								<input type="email" name="mail" id="email" required>
+						</p>
+
+						<p>
+							  <label for="auswahl">Ihr Anliegen</label>
+								<select name="selection" id="auswahl">
+									  <option>Bestellung</option>
+										<option>Catering</option>
+										<option>Sonstiges</option>
+								</select>
+						</p>
+
+						<p> Wenn Sie eine Bestellung aufgeben möchten, nennen Sie uns die Produkte aus unserer <a href="produkte.html">Auswahl</a> und die benötigte Anzahl.
+								<p>
+							  <label for="nachricht">Ihre Nachricht*</label>
+								<br>
+								<textarea name="message" rows="8" cols="50" id="nachricht" required></textarea>
+							  </p>
+						</p>
+
+						<p>Felder mit einem * sind erforderlich um das Formular absenden zu können.</p>
+
+						<p><input type="submit" name="button" id="sende" value="Senden"></p>
+
+				</form>
 		</main>
 	</body>
 </html>
